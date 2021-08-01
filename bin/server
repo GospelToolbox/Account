@@ -2,5 +2,6 @@
 set -e
 
 docker-compose run \
+  -p 3000:3000 \
   account \
-  ./bin/_setup
+  ./bin/_server

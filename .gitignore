@@ -31,3 +31,10 @@ runServer.cmd
 runtests.cmd
 .env
 .DS_Store
+
+# Lamby
+/.aws-sam
+.env.*
+!.env.development
+!.env.test
+/vendor/bundle

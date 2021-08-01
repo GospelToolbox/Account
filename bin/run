@@ -3,4 +3,4 @@ set -e
 
 docker-compose run \
   account \
-  ./bin/_setup
+  $@

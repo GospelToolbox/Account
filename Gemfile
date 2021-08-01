@@ -5,6 +5,13 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'aws-sdk-ssm'
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+
+gem "omniauth-rails_csrf_protection", "~> 1.0"
+
+gem "lamby", "~> 3.1", require: false
+
 gem 'active_link_to'
 
 gem 'bcrypt', '3.1.11', platforms: [:ruby]
@@ -34,7 +41,7 @@ gem 'pg', '~> 1.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -61,16 +68,14 @@ gem 'graphiql-rails', group: :development
 
 gem 'coveralls', require: false
 
-gem 'dotenv-rails'
-
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
+  gem 'capybara'
   gem 'selenium-webdriver'
+  gem 'webdrivers'
 
   # Static analysis 
   gem 'brakeman', require: false
@@ -82,5 +87,8 @@ group :development do
   gem 'domp'
 end
 
+group :production do
+  gem 'lograge'
+end
 
-gem "omniauth-rails_csrf_protection", "~> 1.0"
+
