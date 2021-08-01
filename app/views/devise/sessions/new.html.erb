@@ -22,10 +22,15 @@
               Twitter
             </a>
             <!--Google +-->
-            <%# <a class="btn btn-google btn-rounded z-depth-1a" href="<%=url_for  %>">
+            <%# <a class="btn btn-google btn-rounded z-depth-1a" href="<%=url_for  %>
              
-            </a> %>
-            <%=link_to('<i class="fa fa-google-plus mr-1"></i> Google', omniauth_authorize_path(resource_name, :google_oauth2), method: :post) %>
+            </a>
+            <%=link_to(
+              '<i class="fa fa-google-plus mr-1"></i> Google'.html_safe,
+              omniauth_authorize_path(resource_name, :google_oauth2),
+              method: :post,
+              class: 'btn btn-google btn-rounded mr-md-3 z-depth-1a'
+              ) %>
           </div>
 
           <p class="separator">
