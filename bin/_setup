@@ -15,5 +15,5 @@ bundle config set --local path 'vendor/bundle'
 bundle install
 ./bin/yarn
 
-puts "\n== Preparing database =="
+echo "\n== Preparing database =="
 bin/rails db:setup
