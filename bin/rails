@@ -2,7 +2,8 @@
 APP_PATH = File.expand_path('../config/application', __dir__)
 require_relative "../config/boot"
 
-require "dotenv" 
+require "dotenv"
+require "rails"
 Dotenv.load(File.expand_path("../../.env.#{Rails.env}", __FILE__))
 
 require "rails/commands"
