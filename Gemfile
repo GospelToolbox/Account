@@ -7,7 +7,7 @@ end
 
 gem 'active_link_to'
 
-gem 'bcrypt', '3.1.11', platforms: [:ruby]
+gem 'bcrypt', '3.1.16', platforms: [:ruby]
 
 gem 'devise'
 gem 'doorkeeper', '~> 5'
