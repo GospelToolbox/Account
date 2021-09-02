@@ -11,7 +11,7 @@ import {
   Link
 } from 'react-router-dom';
 
-const pathRoot = process.env.RAILS_RELATIVE_URL_ROOT;
+const pathRoot = process.env.RAILS_RELATIVE_URL_ROOT || '';
 
 export default class CreateOrganizationView extends React.Component {
   state = {
