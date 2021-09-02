@@ -110,6 +110,10 @@ Doorkeeper.configure do
   #   client.superapp? or resource_owner.admin?
   # end
 
+  skip_authorization do
+    true
+  end
+
   # WWW-Authenticate Realm (default "Doorkeeper").
   realm "Gospel Toolbox"
 end
