@@ -1,4 +1,6 @@
 language: ruby
+rvm:
+  - 2.7
 env: 
   - RAILS_ENV=test
 before_script:
