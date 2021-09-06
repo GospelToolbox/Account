@@ -10,7 +10,7 @@ import {
 import profileImage from 'images/profile.png';
 import ProfileForm from './ProfileForm';
 
-const pathRoot = process.env.RAILS_RELATIVE_URL_ROOT;
+const pathRoot = process.env.RAILS_RELATIVE_URL_ROOT || '';
 
 export default class ProfileView extends React.Component {
   state = {

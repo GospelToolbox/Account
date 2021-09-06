@@ -9,7 +9,7 @@ import {
   ModalFooter
 } from 'reactstrap';
 
-const pathRoot = process.env.RAILS_RELATIVE_URL_ROOT;
+const pathRoot = process.env.RAILS_RELATIVE_URL_ROOT || '';
 
 export default class OrganizationInvitation extends React.Component {
   static propTypes = {

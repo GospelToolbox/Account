@@ -16,7 +16,7 @@ import UserMemberships from './UserMemberships';
 import ManageOrganizationView from './ManageOrganizationView';
 import CreateOrganizationView from './CreateOrganizationView';
 
-const pathRoot = process.env.RAILS_RELATIVE_URL_ROOT;
+const pathRoot = process.env.RAILS_RELATIVE_URL_ROOT || '';
 
 export default class OrganizationsView extends React.Component {
   constructor(props) {

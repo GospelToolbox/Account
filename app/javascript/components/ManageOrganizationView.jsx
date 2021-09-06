@@ -17,7 +17,7 @@ import $ from 'jquery';
 import profileImage from 'images/organization.png';
 import OrganizationInvitation from './OrganizationInvitation';
 
-const pathRoot = process.env.RAILS_RELATIVE_URL_ROOT;
+const pathRoot = process.env.RAILS_RELATIVE_URL_ROOT || '';
 
 export default class ManageOrganizationView extends React.Component {
   constructor(props) {
