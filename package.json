@@ -2,15 +2,15 @@
   "name": "@gospeltoolbox/account",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5",
+    "@rails/webpacker": "^5.4.2",
     "axios": "^0.21.2",
-    "babel-preset-react": "^6.24.1",
+    "@babel/preset-react": "^7.14.5",
     "bootstrap": "^4.3.1",
     "file-loader": "^1.1.11",
     "graphql.js": "^0.4.20",
     "immutability-helper": "^2.6.4",
     "jquery": "^3.5.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^6.0.1",
     "popper.js": "1.12.9",
     "prop-types": "^15.7.2",
     "query-string": "^5.1.0",
@@ -20,7 +20,7 @@
     "react_ujs": "^2.4.3",
     "reactstrap": "^5.0.0-alpha.4",
     "sass-loader": "^6.0.6",
-    "webpack": "^3.10.0"
+    "webpack": "^4.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
@@ -29,6 +29,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
-    "webpack-dev-server": "2.11.2"
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.0"
   }
 }
