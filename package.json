@@ -10,7 +10,7 @@
     "graphql.js": "^0.4.20",
     "immutability-helper": "^2.6.4",
     "jquery": "^3.5.0",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "popper.js": "1.12.9",
     "prop-types": "^15.7.2",
     "query-string": "^5.1.0",
